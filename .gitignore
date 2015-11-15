@@ -1,0 +1,9 @@
+bin/
+gen/
+msvs*
+*.tar*
+*.stackdump
+*.exe
+*.o
+*.vcxproj*
+*.out
