@@ -10,6 +10,4 @@ Examples of valid command-line arguments are:
 
 ./poke -m FASTTSP < fastopt16000.in
 
-The "fast-TSP" solution uses MST to approximate a solution, which is then repeatedly optimized using Two-Opt until it is determined that any additional optimizations will cause the execution time to exceed 30 sec.
-
-Note that this project was developed in < 1 week during a busy semester. Some corners were cut (ok, a lot) with regards to documentation and maintainability, as neither was necessary for full credit.
+My "fast-TSP" solution uses MST to approximate a shortest circuit, which is then repeatedly optimized using Two-Opt until it is determined that any additional optimization iterations could cause the execution time to exceed 30 sec.
