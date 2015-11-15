@@ -9,25 +9,25 @@ using namespace std;
 
 enum RegionType
 {
-	LAND,
-	SEA,
-	COAST
+    LAND,
+    SEA,
+    COAST
 };
 
 struct Pokemon
 {
-	const int xPos;
-	const int yPos;
+    const int xPos;
+    const int yPos;
 
-	Pokemon(int x, int y) :
-		xPos(x), yPos(y) { }
+    Pokemon(int x, int y) :
+        xPos(x), yPos(y) { }
 
-	inline RegionType region() const {
-		if (xPos < 0 && yPos < 0) return SEA;
-		if (xPos == 0 || yPos == 0) return COAST;
-		
-		return LAND;
-	}
+    inline RegionType region() const {
+        if (xPos < 0 && yPos < 0) return SEA;
+        if (xPos == 0 || yPos == 0) return COAST;
+        
+        return LAND;
+    }
 }; // class Pokemon
 
 
