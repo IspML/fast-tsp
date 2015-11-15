@@ -1,9 +1,6 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
-#include "Kanto.h"
-#include "Pokemon.h"
-
 #include <iostream>
 #include <string>
 #include <cmath>

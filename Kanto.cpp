@@ -2,6 +2,7 @@
 
 #include <exception>
 #include <cfloat>
+#include <climits>
 #include <algorithm>
 
 using namespace std;
@@ -229,4 +230,3 @@ Kanto::twoOpt(vector<unsigned>& nodes, const clock_t& endTime)
 
 	return total;
 }
-
