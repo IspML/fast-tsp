@@ -166,12 +166,10 @@ void TspFinder::find(ostream& os)
 
     #ifdef ANALYZE
     clock_t end = clock();
-
     os << "\n\nPrunes at level:\n";
     for (unsigned i = 0; i < m_prunes.size(); ++i) {
         os << i << ": " << m_prunes[i] << "\n";
     }
-
-    os << "\nRuntime: " << (end - start) / (double)(CLOCKS_PER_SEC / 1000) << " ms\n";
+    os << "\nRuntime: " << (end - start) / (double)(CLOCKS_PER_SEC) * 1000 << " ms\n";
     #endif
 }
